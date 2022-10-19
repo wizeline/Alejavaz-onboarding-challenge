@@ -20,5 +20,4 @@ class LogInPage{
         return new DashboardPage(page);
     }
 }
-
 module.exports = {LogInPage};

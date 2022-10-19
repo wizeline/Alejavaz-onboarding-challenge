@@ -13,6 +13,7 @@ class HomePage{
  
      async pressLogInButton(){
          await this.signInButton.click();
-         return new LogInPage(page);
+         return new LogInPage(page);        
      }
  }
+ module.exports = {HomePage};
