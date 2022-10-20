@@ -8,12 +8,12 @@ class HomePage{
    
      constructor(page){
          this.page = page;
-         this.signInButton = page.locator('[href*=login]');   
+         this.signInButton = page.getByRole('link', { name: 'Log in' });
      }
  
      async pressLogInButton(){
          await this.signInButton.click();
-         return new LogInPage(page);        
+         return new LogInPage(this.page);        
      }
  }
  module.exports = {HomePage};
