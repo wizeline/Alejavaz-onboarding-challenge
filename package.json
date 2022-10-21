@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test tests/session.spec.js",
-    "debugapi": "npx playwright test tests/apiLogin.spec.js"
+    "debugapi": "npx playwright test tests/apiLogin.spec.js",
+    "allure" : "allure serve OR npx allure generate ./allure-results"
   },
   "author": "Alejandro Vazquez",
   "license": "ISC",
