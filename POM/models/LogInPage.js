@@ -2,12 +2,15 @@ const {DashboardPage} = require('./DashboardPage');
 
 class LogInPage{
 
+    //Import playwright page object to add library autocompletion to class
     /**
     * @param {import('@playwright/test').Page} page
     */
 
     constructor(page){
         this.page = page;
+
+        //Login page locators
         this.emailTextBox = page.locator('#element-0');
         this.passwordTextBox = page.locator('#element-3');
         this.logInButton = page.locator('[data-gtm-id="start-email-login"]');
@@ -17,6 +20,7 @@ class LogInPage{
 
     }
 
+    //Log in as user returning a dashboard page new object
     async logInAsUser(userName, userPass){
         await this.emailTextBox.fill(userName);
         await this.passwordTextBox.fill(userPass);

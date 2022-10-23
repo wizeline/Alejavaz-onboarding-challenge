@@ -45,8 +45,43 @@ const config = {
     trace: 'on',
   },
 
-  /* Configure projects for major browsers */
   
+
+  /* Configure projects for major browsers */
+  projects: [
+    {
+      name: 'safari',
+      use: {
+        actionTimeout: 0,
+        trace: 'on',
+        browserName : 'webkit',
+        screenshot : 'on',
+        headless: false,
+      },
+    },
+
+    {
+      name: 'firefox',
+      use: {
+        actionTimeout: 0,
+        trace: 'on',
+        browserName : 'firefox',
+        screenshot : 'on',
+        headless: false,
+      },
+    },
+
+    {
+      name: 'google',
+      use: {
+        actionTimeout: 0,
+        trace: 'on',
+        browserName : 'chromium',
+        screenshot : 'on',
+        headless: false,
+      },
+    }
+  ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   outputDir: 'POM/test-results/',

@@ -8,8 +8,10 @@
     "debugapi": "npx playwright test tests/apiLogin.spec.js",
     "genallure" : "npx playwright test --reporter=line,allure-playwright",
     "openallure" : "allure serve OR npx allure generate ./allure-results",
-    "report" : "npx playwright show-report"
-    
+    "report" : "npx playwright show-report",
+    "chromium" : "npx playwright test --project=google",
+    "firefox" : "npx playwright test --project=firefox",
+    "safari" : "npx playwright test --project=safari"
   },
   "author": "Alejandro Vazquez",
   "license": "ISC",

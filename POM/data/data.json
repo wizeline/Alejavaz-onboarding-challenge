@@ -1,8 +1,8 @@
 {
     "correctEmail" : "a_vazquez_d@yahoo.com",
     "correctPassword" : "Td@159357",
-    "incorrectEmail" : "avazquezd@hotmail.com",
-    "incorrectPassword" : "Td@159358",
+    "incorrectEmail" : "incorrectemail@hotmail.com",
+    "incorrectPassword" : "wrongpass",
     "toDoistUrl" : "https://todoist.com/",
     "newTask" : "This is task ",
     "taskNumberTC1" : "1",

@@ -1,6 +1,8 @@
 const { test, expect } = require('@playwright/test');
-const data = require('../data/data.json');
 import {HomePage} from '../models/HomePage';
+
+//Create global data.json variable for test parametrization
+const data = require('../data/data.json');
 
 
 test.describe('Given a new user when load the application he is able to access', ()=>{

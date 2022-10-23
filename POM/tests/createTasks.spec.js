@@ -1,6 +1,7 @@
 const {test, expect} = require('@playwright/test');
 import {HomePage} from '../models/HomePage';
-import { DashboardPage } from '../models/DashboardPage';
+
+//Create global data.json variable for test parametrization
 const data = require('../data/data.json');
 
 test.describe('Given a logged user when tasks are created then user is able to add tasks', ()=>{
