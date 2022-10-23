@@ -4,7 +4,7 @@
     "incorrectEmail" : "avazquezd@hotmail.com",
     "incorrectPassword" : "Td@159358",
     "toDoistUrl" : "https://todoist.com/",
-    "newTask" : "This is task #",
+    "newTask" : "This is task ",
     "taskNumber" : "1",
     "wrongCredentialsMessage" : "Wrong email or password.",
     "emptyPasswordMessage" : "Passwords must be at least 8 characters long.",

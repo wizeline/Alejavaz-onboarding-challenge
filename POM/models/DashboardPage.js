@@ -6,14 +6,18 @@ class DashboardPage{
     
     constructor(page){
         this.page = page;
-        this.addTaskButton = page.locator('.plus_add_button');
-        this.taskText = page.locator('[placeholder="Description"]');
+        this.addNewTaskButton = page.locator('.plus_add_button');
+        this.addTask = page.locator('[type="submit"]');
+        this.taskTitleTextbox = page.locator('.DraftEditor-editorContainer');
+        this.taskContent = page.locator('ul > li div.markdown_content');
     }
 
     async addNewTask(task, taskNumber){
-        await this.addTaskButton().click();
-        await this.taskText().type(task + parseInt(taskNumber));
+        if(taskNumber == 1){
+            await this.addNewTaskButton.click();
+            await this.taskTitleTextbox.type(task + taskNumber);
+            await this.addTask.click();
+        }
     }
-
 }
 module.exports = {DashboardPage};
