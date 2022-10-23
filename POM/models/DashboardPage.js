@@ -18,6 +18,13 @@ class DashboardPage{
             await this.taskTitleTextbox.type(task + taskNumber);
             await this.addTask.click();
         }
+        else if(taskNumber == 10){
+            await this.addNewTaskButton.click();
+            for(let taskNum = 1 ; taskNum <= taskNumber; ++taskNum ){
+                await this.taskTitleTextbox.type(task + taskNum);
+                await this.addTask.click();
+            }
+        }
     }
 }
 module.exports = {DashboardPage};
