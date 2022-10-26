@@ -1,0 +1,63 @@
+{
+	"id": "443177ac-09c3-40f0-a382-44c606d70f34",
+	"name": "Todoist",
+	"values": [
+		{
+			"key": "todoisttoken",
+			"value": "40aa75afa188acfe1b7d42a5d78595247b4487be",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "todoistUrlTask",
+			"value": "https://api.todoist.com/rest/v2/tasks",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "taskId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "taskTitle",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "todoistUrlProject",
+			"value": "https://api.todoist.com/rest/v2/projects",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "projectId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "projectTitle",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "modifiedProjectTitle",
+			"value": "QAChallenge 2",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "projectResponse",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-10-26T15:06:03.794Z",
+	"_postman_exported_using": "Postman/10.0.37"
+}

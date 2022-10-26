@@ -1,16 +1,6 @@
 # Alejavaz-onboarding-challenge
 QA Onboarding challenge
 
-# ToDoistPlaywright
-
-<h1 align="center">
-  <br>
- 
-  <br>
-  ToDoist Challenge - FrontEnd/BackEnd
-  <br>
-</h1>
-
 <h4 align="center">QA buddy program for ToDoist Challenge Frontend and Backend.</h4>
 
 <p align="center">
@@ -21,11 +11,11 @@ QA Onboarding challenge
 
 ## :sparkles: Key Features
 
-* **ToDoistRepo** - Frontend and Backend living within the same repository.
+* **alejavaz-onboarding-challenge** - Frontend and Backend living within the same repository.
 
 ## :package: Packages
 
-- **@ToDoist-FrontEnd** - Modules shared web
+- **@ToDoist-FrontEnd** - Playwright
 - **@ToDoist-BackEnd** - Postman and Newman 
 
 ## :blue_book: Setup
@@ -35,7 +25,7 @@ To clone and run this application, you'll need the following:
 - [Node.js](https://nodejs.org/en/download/)
 - [Npm](https://www.npmjs.com/)
 - [Newman](https://www.npmjs.com/package/newman)
-- [Jest] (https://jestjs.io/)
+- [Jest](https://jestjs.io/)
 
 ```bash
 # Clone this repository
@@ -88,4 +78,5 @@ In order to run Backend, execute the following commands
 #### Scripts to run BE
 ```bash
 # npm run be
-```
+
+

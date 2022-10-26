@@ -4,7 +4,7 @@
   "description": "QA Onboarding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test tests/session.spec.js",
+    "test": "npx playwright test tests/session.spec.js --headed",
     "debugapi": "npx playwright test tests/apiLogin.spec.js",
     "genallure" : "npx playwright test --reporter=line,allure-playwright",
     "openallure" : "allure serve OR npx allure generate ./allure-results",

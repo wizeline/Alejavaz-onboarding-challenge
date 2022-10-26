@@ -17,9 +17,7 @@ test.describe('Given a logged user when tasks are created then user is able to a
     test('TC1: Given logged user when a task is created then the task is displayed on dashboard', async ({page}) => {
         const homePage = new HomePage(page);
         const loginPage = await homePage.pressLogInButton();
-
         const dashBoard = await loginPage.logInAsUser(data.correctEmail, data.correctPassword);
-        
         await expect(page).toHaveTitle('Today: Todoist');
         await dashBoard.addNewTask(data.newTask, parseInt(data.taskNumberTC1));
         expect(await dashBoard.taskContent).toHaveText(data.newTask + data.taskNumberTC1);
@@ -27,12 +25,9 @@ test.describe('Given a logged user when tasks are created then user is able to a
     });
 
     test('TC2: Given a logged user when 10 tasks are created then all the tasks are displayed on dashboard', async ({page}) => {
-
         const homePage = new HomePage(page);
         const loginPage = await homePage.pressLogInButton();
-
         const dashBoard = await loginPage.logInAsUser(data.correctEmail, data.correctPassword);
-        
         await expect(page).toHaveTitle('Today: Todoist');
         await dashBoard.addNewTask(data.newTask, parseInt(data.taskNumberTC2));
         expect(await dashBoard.taskContent.count() == parseInt(data.taskNumberTC2));
