@@ -87,7 +87,5 @@ In order to run Backend, execute the following commands
 
 #### Scripts to run BE
 ```bash
-# On the shared folder
-# test:be
-$ yarn test:be
+# npm run be
 ```

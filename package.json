@@ -11,7 +11,8 @@
     "report" : "npx playwright show-report",
     "chromium" : "npx playwright test --project=google",
     "firefox" : "npx playwright test --project=firefox",
-    "safari" : "npx playwright test --project=safari"
+    "safari" : "npx playwright test --project=safari",
+    "be" : "newman run ./BE/BEtest.json -e ./BE/envvar.json"
   },
   "author": "Alejandro Vazquez",
   "license": "ISC",
