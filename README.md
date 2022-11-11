@@ -67,8 +67,12 @@ FIREFOX:
 # npm run firefox
 SAFARI:
 # npm run safari
+MULTIPLE BROWSERS:
+# npm run project
 SHOW REPORT:
-# npm run
+# npm run reportHtml
+SHOW ALLURE REPORT:
+# npm run allure
 ```
 The selected script will run the all tests in parallel & headed mode in the corresponding browser.
 

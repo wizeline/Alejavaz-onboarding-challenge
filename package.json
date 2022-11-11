@@ -4,15 +4,15 @@
   "description": "QA Onboarding challenge",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test tests/session.spec.js --headed",
-    "debugapi": "npx playwright test tests/apiLogin.spec.js",
-    "genallure" : "npx playwright test --reporter=line,allure-playwright",
-    "openallure" : "allure serve OR npx allure generate ./allure-results",
-    "report" : "npx playwright show-report",
-    "chromium" : "npx playwright test --project=google",
-    "firefox" : "npx playwright test --project=firefox",
-    "safari" : "npx playwright test --project=safari",
-    "be" : "newman run ./BE/BEtest.json -e ./BE/envvar.json"
+    "allure" : "npm run project --headed && npm run allureReport && npm run allureOpen",
+    "allureReport" : "allure generate allure-results -o allure-report --clean",
+    "allureOpen" : "allure open allure-report",
+    "reportHtml": "npx playwright show-report",
+    "project" : "npx playwright test --project=google && npx playwright test --project=firefox && npx playwright test --project=safari && npm run be",
+    "chromium": "npx playwright test --project=google",
+    "firefox": "npx playwright test --project=firefox",
+    "safari": "npx playwright test --project=safari",
+    "be": "newman run ./BE/BEtest.json -e ./BE/envvar.json"
   },
   "author": "Alejandro Vazquez",
   "license": "ISC",
@@ -20,6 +20,10 @@
     "@playwright/test": "^1.27.1",
     "allure": "^0.0.0",
     "allure-playwright": "^2.0.0-beta.19",
+    "experimental-allure-playwright": "^0.0.3",
     "jest": "^29.2.1"
+  },
+  "dependencies": {
+    "@zen-qa/playwright.slack.reporter": "^1.0.2"
   }
 }

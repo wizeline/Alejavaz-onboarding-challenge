@@ -32,15 +32,16 @@ const config = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  //reporter: 'allure-playwright',
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    browserName : 'chromium',
+    //browserName : 'chromium',
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
-
+    headless: true,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
   },
@@ -53,10 +54,9 @@ const config = {
       name: 'safari',
       use: {
         actionTimeout: 0,
-        trace: 'on',
+        trace: 'retain-on-failure',
         browserName : 'webkit',
-        screenshot : 'on',
-        headless: false,
+        screenshot : 'only-on-failure',
       },
     },
 
@@ -64,10 +64,9 @@ const config = {
       name: 'firefox',
       use: {
         actionTimeout: 0,
-        trace: 'on',
+        trace: 'retain-on-failure',
         browserName : 'firefox',
-        screenshot : 'on',
-        headless: false,
+        screenshot : 'only-on-failure',
       },
     },
 
@@ -75,10 +74,9 @@ const config = {
       name: 'google',
       use: {
         actionTimeout: 0,
-        trace: 'on',
+        trace: 'retain-on-failure',
         browserName : 'chromium',
-        screenshot : 'on',
-        headless: false,
+        screenshot : 'only-on-failure',
       },
     }
   ],

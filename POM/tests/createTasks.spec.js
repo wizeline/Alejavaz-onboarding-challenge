@@ -19,7 +19,7 @@ test.describe('Given a logged user when tasks are created then user is able to a
         const loginPage = await homePage.pressLogInButton();
         const dashBoard = await loginPage.logInAsUser(data.correctEmail, data.correctPassword);
         await expect(page).toHaveTitle('Today: Todoist');
-        await dashBoard.addNewTask(data.newTask, parseInt(data.taskNumberTC1));
+        await dashBoard.addNewTask(data.newTask, parseInt(data.taskNumberTC1), data.toDoistUrl);
         expect(await dashBoard.taskContent).toHaveText(data.newTask + data.taskNumberTC1);
 
     });

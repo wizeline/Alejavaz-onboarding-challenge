@@ -4,7 +4,7 @@
 	"values": [
 		{
 			"key": "todoisttoken",
-			"value": "40aa75afa188acfe1b7d42a5d78595247b4487be",
+			"value": "a8d84280deae82ce87fd1621d8432ba95a386f95",
 			"type": "default",
 			"enabled": true
 		},
@@ -58,6 +58,6 @@
 		}
 	],
 	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2022-10-26T15:06:03.794Z",
-	"_postman_exported_using": "Postman/10.0.37"
+	"_postman_exported_at": "2022-11-11T15:17:28.011Z",
+	"_postman_exported_using": "Postman/10.2.0"
 }

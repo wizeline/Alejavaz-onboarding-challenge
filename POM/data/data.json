@@ -9,5 +9,7 @@
     "taskNumberTC2" : "10",
     "wrongCredentialsMessage" : "Wrong email or password.",
     "emptyPasswordMessage" : "Passwords must be at least 8 characters long.",
-    "emptyEmailMessage" : "Please enter a valid email address."
+    "emptyEmailMessage" : "Please enter a valid email address.",
+    "todoisToken" : "a8d84280deae82ce87fd1621d8432ba95a386f95",
+    "todoisDeleteApi" : "https://api.todoist.com/rest/v2/tasks/"
 }

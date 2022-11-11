@@ -22,6 +22,7 @@ test.describe('Given a new user when load the application he is able to access',
     const homePage = new HomePage(page);
     const loginPage = await homePage.pressLogInButton();
     await loginPage.logInAsUser(data.incorrectEmail, data.correctPassword);
+    await loginPage.incorrectCredentialsText.waitFor({state: 'visible'});
     expect(await loginPage.incorrectCredentialsText).toHaveText(data.wrongCredentialsMessage);
     
   });
@@ -38,6 +39,7 @@ test.describe('Given a new user when load the application he is able to access',
     const homePage = new HomePage(page);
     const loginPage = await homePage.pressLogInButton();
     await loginPage.logInButton.click();
+    await loginPage.emptyEmailAddress.waitFor({state: 'visible'});
     expect(await loginPage.emptyEmailAddress).toHaveText(data.emptyEmailMessage);
 });
 
@@ -45,6 +47,7 @@ test.describe('Given a new user when load the application he is able to access',
     const homePage = new HomePage(page);
     const loginPage = await homePage.pressLogInButton();
     await loginPage.logInAsUser(data.correctEmail, data.correctPassword="");
+    await loginPage.emptyPassAddress.waitFor({state: 'visible'});
     await expect(loginPage.emptyPassAddress).toContainText(data.emptyPasswordMessage);
   });
 })
