@@ -48,6 +48,7 @@ $ npm install
 # TC1 : 1
 # TC2 : 10
 # can be modified on POM/data/data.json
+# Additional test cases can be added
 "taskNumberTC1" : "1",
 "taskNumberTC2" : "10",
 
