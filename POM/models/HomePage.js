@@ -12,6 +12,8 @@ class HomePage{
 
          //Home page locators
          this.signInButton = page.getByRole('link', { name: 'Log in' });
+         this.todayText = page.locator('.simple_content');
+         
      }
  
      //Press the Log In button in home page

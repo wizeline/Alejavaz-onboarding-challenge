@@ -32,8 +32,8 @@ const config = {
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  //reporter: 'allure-playwright',
-  reporter: 'html',
+  reporter: [["dot"], ["html"], ["allure-playwright"]],
+  //reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     //browserName : 'chromium',
@@ -50,6 +50,7 @@ const config = {
 
   /* Configure projects for major browsers */
   projects: [
+    
     {
       name: 'safari',
       use: {
@@ -59,7 +60,6 @@ const config = {
         screenshot : 'only-on-failure',
       },
     },
-
     {
       name: 'firefox',
       use: {
@@ -69,7 +69,6 @@ const config = {
         screenshot : 'only-on-failure',
       },
     },
-
     {
       name: 'google',
       use: {

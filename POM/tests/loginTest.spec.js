@@ -15,6 +15,7 @@ test.describe('Given a new user when load the application he is able to access',
     const homePage = new HomePage(page);
     const loginPage = await homePage.pressLogInButton();
     await loginPage.logInAsUser(data.correctEmail, data.correctPassword);
+    await homePage.todayText.waitFor({state: 'visible'});
     await expect(page).toHaveTitle('Today: Todoist');
   });
 

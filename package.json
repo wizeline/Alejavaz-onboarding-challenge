@@ -4,21 +4,22 @@
   "description": "QA Onboarding challenge",
   "main": "index.js",
   "scripts": {
-    "allure" : "npm run project --headed && npm run allureReport && npm run allureOpen",
-    "allureReport" : "allure generate allure-results -o allure-report --clean",
-    "allureOpen" : "allure open allure-report",
-    "reportHtml": "npx playwright show-report",
-    "project" : "npx playwright test --project=google && npx playwright test --project=firefox && npx playwright test --project=safari && npm run be",
+    "showHtml": "npx playwright show-report",
+    "beTest": "newman run ./BE/BEtest.json -e ./BE/envvar.json -r htmlextra --reporter-htmlextra-export ./POM/test-results/beReport.html",
     "chromium": "npx playwright test --project=google",
-    "firefox": "npx playwright test --project=firefox",
-    "safari": "npx playwright test --project=safari",
-    "be": "newman run ./BE/BEtest.json -e ./BE/envvar.json"
+    "chromium2": "npx playwright test --project=google && npm run allureGenerate, && npm run allureOpen",
+    "firefox": "npx playwright test --project=firefox --reporter=line,allure-playwright",
+    "safari": "npx playwright test --project=safari --reporter=line,allure-playwright",
+    "allureGenerate": "npx allure generate ./allure-results --clean",
+    "allureOpen": "npx allure open ./allure-report",
+    "challenge": "npm run chromium && npm run allureGenerate && npm run allureOpen"
   },
   "author": "Alejandro Vazquez",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.27.1",
     "allure": "^0.0.0",
+    "allure-commandline": "^2.21.0",
     "allure-playwright": "^2.0.0-beta.19",
     "experimental-allure-playwright": "^0.0.3",
     "jest": "^29.2.1"
