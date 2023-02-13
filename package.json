@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "showHtml": "npx playwright show-report",
+    "showHtmlnewReport" : "npx playwright showHtmlnewReport",
     "beTest": "newman run ./BE/BEtest.json -e ./BE/envvar.json -r htmlextra --reporter-htmlextra-export ./POM/test-results/beReport.html",
     "chromium": "npx playwright test --project=google",
     "chromium2": "npx playwright test --project=google && npm run allureGenerate, && npm run allureOpen",
