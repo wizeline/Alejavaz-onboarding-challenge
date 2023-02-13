@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npx playwright install
-    - run: npm run project
+    - run: npm run chromium
