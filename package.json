@@ -6,16 +6,15 @@
   "scripts": {
     "showHtml": "npx playwright show-report",
     "showHtmlnewReport" : "npx playwright showHtmlnewReport",
-    "showHtmlnewReport2" : "npx playwright showHtmlnewReport",
     "beTest": "newman run ./BE/BEtest.json -e ./BE/envvar.json -r htmlextra --reporter-htmlextra-export ./POM/test-results/beReport.html",
     "chromium": "npx playwright test --project=google",
-    "chromium2": "npx playwright test --project=google && npm run allureGenerate, && npm run allureOpen",
     "firefox": "npx playwright test --project=firefox --reporter=line,allure-playwright",
     "safari": "npx playwright test --project=safari --reporter=line,allure-playwright",
     "allureGenerate": "npx allure generate ./allure-results --clean",
     "allureOpen": "npx allure open ./allure-report",
-    "challenge": "npm run chromium",
-    "beAutomation":"newman run ./BE/BEtest.json -e ./BE/envvar.json"
+    "challenge": "npm run chromium && npm run allureGenerate, && npm run allureOpen",
+    "beAutomation":"newman run ./BE/BEtest.json -e ./BE/envvar.json",
+    "feberun" : "npm run chromium & newman run ./BE/BEtest.json -e ./BE/envvar.json"
   },
   "author": "Alejandro Vazquez",
   "license": "ISC",
