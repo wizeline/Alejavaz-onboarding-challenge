@@ -28,4 +28,5 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npx playwright install
-    - run: npm run chromium
+    - run: npm run Challenge
+    - run: npm run beAutomation
