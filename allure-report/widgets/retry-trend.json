@@ -1,1 +1,1 @@
-[{"data":{"run":7,"retry":0}}]
+[{"buildOrder":29,"reportUrl":"http://localhost:8080/job/QAChallenge/29/allure","reportName":"AllureReport","data":{"run":14,"retry":74}},{"buildOrder":28,"reportUrl":"http://localhost:8080/job/QAChallenge/28/allure","reportName":"AllureReport","data":{"run":14,"retry":67}}]

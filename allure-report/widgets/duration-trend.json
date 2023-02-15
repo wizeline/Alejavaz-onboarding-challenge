@@ -1,1 +1,1 @@
-[{"data":{"duration":42949}}]
+[{"buildOrder":29,"reportUrl":"http://localhost:8080/job/QAChallenge/29/allure","reportName":"AllureReport","data":{"duration":160192698}},{"buildOrder":28,"reportUrl":"http://localhost:8080/job/QAChallenge/28/allure","reportName":"AllureReport","data":{"duration":159814486}}]
